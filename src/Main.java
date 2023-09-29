@@ -9,16 +9,16 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
 
-            try {
-                while (true) {
-                    makeRecord();
-                    System.out.println("Успешно!");
-                }
-            } catch (FileSystemException e) {
-                System.out.println(e.getMessage());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+
+            makeRecord();
+            System.out.println("Успешно!");
+
+        } catch (FileSystemException e) {
+            System.out.println(e.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
     }
